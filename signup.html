@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Tinos"
+    />
+    <title>Static Template</title>
+  </head>
+  <body>
+    <header>
+      <a href="/index.html">
+        <h1>The UNC Public Forum</h1>
+      </a>
+      <p>Sign-up Page</p>
+    </header>
+    <div class="grid-container-login">
+      <form class="grid-item-login">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          required
+          id="email"
+          name="email"
+          placeholder="Your email..."
+        /><br /><br />
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Your password..."
+        /><br /><br />
+        <label for="password">Confirm Password</label>
+        <input
+          type="password"
+          id="confirmPassword"
+          name="password"
+          placeholder="Confirm password..."
+        /><br /><br />
+        <input
+          type="submit"
+          value="Submit"
+          id="submit"
+          name="submit"
+          class="submit"
+          onclick="myFunction()"
+        />
+        <script>
+          function myFunction() {
+            window.location.href = "/feed.html";
+          }
+        </script>
+      </form>
+      <div class="grid-item2-signup">
+        <p>Alternative Signup Methods:</p>
+        <img
+          src="https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple/images/apple-id-sign-up-with_2x.png"
+        alt="apple"/>
+        <img class="google" src="https://i.imgur.com/yczPzHD.png" alt="apple"/>
+      </div>
+      <div class="grid-item3-signup">
+          <p> Already have an account? Log in <a class="signupButton" href="/login.html">here.</a>
+      </p>
+      </div>
+    </div>
+    <footer>
+      Image sources:<br /><br />
+      <ul>
+        <li>https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple/images/apple-id-sign-up-with_2x.png</li>
+        <li>https://developers.google.com/identity/branding-guidelines</li>
+      </ul>
+    </footer>
+  </body>
+</html>
